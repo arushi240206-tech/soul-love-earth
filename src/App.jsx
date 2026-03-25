@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/Homepage'
+import WhatsAppButton from './components/ui/WhatsAppButton'
 import './index.css'
 
 export default function App() {
@@ -8,6 +9,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+      <WhatsAppButton />
     </BrowserRouter>
   )
 }
